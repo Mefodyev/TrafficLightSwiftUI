@@ -9,9 +9,9 @@ import SwiftUI
 
 struct TrafficLightCircles: View {
     
-    @State var redAlpha = 0.25
-    @State var yellowAlpha = 0.25
-    @State var greenAlpha = 0.25
+    @State var redAlpha = 1.0
+    @State var yellowAlpha = 1.0
+    @State var greenAlpha = 1.0
     
     func changeColor(taps: Int) {
         
@@ -37,21 +37,21 @@ struct TrafficLightCircles: View {
     var body: some View {
         VStack {
             Circle()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                .frame(width: 125, height: 125)
                 .foregroundColor(
                     .red
                     .opacity(redAlpha)
                 )
             
             Circle()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                .frame(width: 125, height: 125)
                 .foregroundColor(
                     .yellow
                     .opacity(yellowAlpha)
                 )
             
             Circle()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                .frame(width: 125, height: 125)
                 .foregroundColor(
                     .green
                     .opacity(greenAlpha)
