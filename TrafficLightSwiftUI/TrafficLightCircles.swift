@@ -20,7 +20,6 @@ struct TrafficLightCircles: View {
             redAlpha = 1.0
             yellowAlpha = 0.25
             greenAlpha = 0.25
-            
         case 2:
             redAlpha = 0.25
             yellowAlpha = 1.0

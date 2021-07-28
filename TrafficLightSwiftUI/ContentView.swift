@@ -13,8 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            
-            LinearGradient(gradient: Gradient(colors: [Color.white, Color.gray, Color.pink]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [Color(.systemTeal), Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
             
             VStack {
                 TrafficLightCircles()
@@ -27,13 +26,11 @@ struct ContentView: View {
                     )
                     {
                         Text("START")
+                            .foregroundColor(Color.orange)
+                            .font(.title)
                     }
-                    .font(.title)
                     
-                
-                
-                
-                Spacer()
+                 Spacer()
             }.padding()
         }
     }
